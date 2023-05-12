@@ -1,0 +1,161 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #f8f8f8;
+    background-color: #1a1a1a;
+}
+
+/* Header */
+header {
+    background-color: #0f0f0f;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+header sup {
+    color: #39ff14;
+}
+
+header sub {
+    color: #ff073a;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+    box-shadow: 0px 0px 20px #39ff14;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* Community section */
+.community {
+    background-color: #0f0f0f;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 80px;
+}
+
+.community h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.community p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.community button {
+    background-color: #39ff14;
+    color: #0f0f0f;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.community button:hover {
+    background-color: #0f0f0f;
+    color: #39ff14;
+}
+
+/* Footer */
+footer {
+    background-color: #0f0f0f;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    header h1 {
+        margin-top: 5px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero img {
+        margin-bottom: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .community {
+        padding: 60px 20px;
+    }
+
+    .community h2 {
+        font-size: 24px;
+    }
+
+    .community p {
+        font-size: 16px;
+    }
+
+    .community button {
+        padding: 15px 40px;
+        font-size: 20px;
+    }
+}
