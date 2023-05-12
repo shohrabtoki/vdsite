@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vancouver.dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><sup><</sup>ancouver.de<sub>></sub> </h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Vancouver.dev</h2>
+            <img src="van.png" alt="Description of the image">
+            <p>We are a community of developers and tech enthusiasts in Vancouver.</p>
+        </section>
+
+        <section class="community">
+            <h2>Join the Vancouver Tech Community</h2>
+            <p>Connect with like-minded developers, share knowledge, and collaborate on projects.</p>
+            <button>Join now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ in Vancouver</p>
+    </footer>
+
+    <script>
+        const joinButton = document.querySelector('button');
+
+        joinButton.addEventListener('click', () => {
+            alert('Thanks for joining the Vancouver Tech Community!');
+        });
+    </script>
+</body>
+
+</html>
