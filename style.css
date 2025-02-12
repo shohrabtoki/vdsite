@@ -114,6 +114,14 @@ footer {
 footer p {
     margin: 0;
 }
+/* For larger screens (desktops & wider viewports) */
+@media (min-width: 768px) {
+    .iframe-container {
+        padding-bottom: 56.25%; /* 16:9 aspect ratio for desktops */
+        max-width: 900px; /* Restricts the width on large screens */
+        margin: 0 auto; /* Centers the iframe */
+    }
+}
 
 /* Small screens */
 @media only screen and (max-width: 767px) {
