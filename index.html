@@ -35,23 +35,32 @@
     </main>
     
     <style>
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 75%; /* Adjusts height relative to width, making it responsive */
-            height: 0;
-            overflow: hidden;
-        }
-    
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #bfcbda88;
-            border-radius: 4px;
-        }
+    .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Default aspect ratio for mobile */
+    height: 0;
+    overflow: hidden;
+}
+
+/* For larger screens (desktops & wider viewports) */
+@media (min-width: 768px) {
+    .iframe-container {
+        padding-bottom: 56.25%; /* 16:9 aspect ratio for desktops */
+        max-width: 900px; /* Restricts the width on large screens */
+        margin: 0 auto; /* Centers the iframe */
+    }
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bfcbda88;
+    border-radius: 4px;
+}
     </style>
 
        <section class="community">
